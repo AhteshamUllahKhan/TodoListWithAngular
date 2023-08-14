@@ -1,0 +1,17 @@
+<div class="container"> 
+<div class="my-3">
+<h4>Add a TODO</h4>
+<form (ngSubmit)="onSubmit()">
+    <div style= "   background-color: #00FFFF	 " class="form-group">
+      <label for="title"  >Title</label>
+      <input type="text" class="form-control" [(ngModel)]="title" id="title" name="title" aria-describedby="emailHelp" placeholder="Add TODO">
+     
+    </div>
+    <div style= "    background-color: #00FFFF	 " class="form-group">
+      <label  for="desc">Description</label>
+      <input type="text" class="form-control" [(ngModel)]="desc" id="desc" name="desc" placeholder="Description">
+    </div>
+   
+    <button type="submit" class="btn btn-sm btn-primary">Add TODO</button>
+  </form>
+</div>
